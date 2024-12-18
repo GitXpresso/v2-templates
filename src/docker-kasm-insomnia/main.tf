@@ -10,10 +10,10 @@ terraform {
 }
 
 locals {
-  image = "marktmilligan/kasm:latest"
+  image = "kasmweb/firefox:dev"
   user = "kasm-user"
+  VNC_PW=password 
 }
-
 variable "socket" {
   type        = string
   description = <<-EOF
